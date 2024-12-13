@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0");
+    background-color: #121212; /* Deep black background as fallback */
+    color: #E0F7FA; /* Light teal text */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: background 0.5s ease;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+    background: rgba(18, 18, 18, 0.85); /* Slightly transparent black */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Title and Subtitle Styles */
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #00BFA5; /* Vibrant teal color */
+    text-shadow: 2px 2px 4px #000; /* Subtle text shadow */
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #B2DFDB; /* Light teal color */
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 10px;
+}
+
+/* Description Text */
+.description {
+    font-size: 18px;
+    color: #E0F7FA; /* Light teal */
+    margin-top: 20px;
+    line-height: 1.7;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Button Styling */
+.get-started-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #00796B; /* Deep teal for button */
+    color: #E0F7FA; /* Light text for contrast */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #004D40; /* Darker shade of teal on hover */
+    transform: scale(1.08); /* Slightly enlarge on hover */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 34px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .get-started-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
